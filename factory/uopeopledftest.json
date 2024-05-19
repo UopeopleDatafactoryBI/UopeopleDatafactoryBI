@@ -1,0 +1,9 @@
+{
+	"name": "uopeopledftest",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2e4b4c86-a0fb-44ff-a6a3-ae44306bb081",
+		"tenantId": "79ebb2ce-3b99-4ccd-850d-8de98f5e9a39"
+	}
+}

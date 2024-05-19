@@ -1,0 +1,16 @@
+{
+	"name": "CRM_Case_Table_20240417",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleCRM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DynamicsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "incident"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

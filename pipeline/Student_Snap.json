@@ -1,0 +1,48 @@
+{
+	"name": "Student_Snap",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DynamicsSource",
+						"query": "<fetch mapping='logical'>\r\n<entity name='account'>\r\n<attribute name='accountid'/>\r\n<attribute name='createdon'/>\r\n<attribute name='modifiedon'/>\r\n<attribute name='name'/>\r\n<attribute name='new_countryid'/>\r\n<attribute name='new_countryofbirthid'/>\r\n<attribute name='new_programfunding'/>\r\n<attribute name='new_programrequestedid'/>\r\n<attribute name='new_studentstatus'/>\r\n<attribute name='new_termstartinglatestapplicable'/>\r\n<attribute name='new_userid'/>\r\n</entity>\r\n</fetch>"
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"preCopyScript": "TRUNCATE TABLE [Test].[dbo].[Student_AY2024_T2]",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "DynamicsEntity7",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SqlServerTable6",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-11-28T05:19:36Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,26 @@
+{
+	"name": "SQL_Table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleBITest",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SQL_Table_Name": {
+				"type": "string",
+				"defaultValue": "ABC"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": {
+				"value": "@dataset().SQL_Table_Name",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

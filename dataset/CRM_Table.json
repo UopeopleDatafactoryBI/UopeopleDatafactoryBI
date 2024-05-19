@@ -1,0 +1,25 @@
+{
+	"name": "CRM_Table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleCRM",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"CRM_Entity_Name": {
+				"type": "string",
+				"defaultValue": "abc"
+			}
+		},
+		"annotations": [],
+		"type": "DynamicsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": {
+				"value": "@dataset().CRM_Entity_Name",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,16 @@
+{
+	"name": "DynamicsEntity6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleCRM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DynamicsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "new_studentstatusterm"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

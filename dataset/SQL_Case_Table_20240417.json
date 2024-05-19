@@ -1,0 +1,17 @@
+{
+	"name": "SQL_Case_Table_20240417",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleBITest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Case"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

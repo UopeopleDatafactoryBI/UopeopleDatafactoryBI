@@ -1,0 +1,57 @@
+{
+	"name": "SqlServerTable5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleBITest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "modifiedon",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "createdon",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "new_termid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "new_programadvisor",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "new_studentstatustermid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "new_programid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "new_studentid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "new_activeinactive",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "new_studentstatusid",
+				"type": "uniqueidentifier"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Term Activity test"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

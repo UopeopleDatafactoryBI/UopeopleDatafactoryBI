@@ -1,0 +1,16 @@
+{
+	"name": "DynamicsEntity5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleCRM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DynamicsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "account"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

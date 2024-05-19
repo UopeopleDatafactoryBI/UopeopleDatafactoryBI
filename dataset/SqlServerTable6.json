@@ -1,0 +1,17 @@
+{
+	"name": "SqlServerTable6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "UoPeopleBITest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Student_AY2024_T2"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
